@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+<html lang="ko">
+    <head>
+        <title>05_이미지.html</title>
+    </head>
+    <body>        
+        <!--
+            * 정적 이미지(.jpg .png .gif) 추가, 그림은 한번에 하나씩
+             <img src="경로명+파일명">
+             <img src="경로명+파일명"/>
+
+             1) 상대경로(현재 문서가 저장되어있는 폴더를 기준으로. 여기서는 /frontend/html 경로 기준.)
+                images/         현재 폴더 안에서 하위 폴더 images
+                ./images/       현재 폴더 안에서 하위 폴더 images
+                ../images/      현재 폴더의 상위 폴더 images
+                ../../images/   현재 폴더의 상위의 상위 폴더 images
+
+             2) 절대경로
+                웹프로젝트를 만든다고 가정했을 때 홈디렉터리(root)를 기준으로 하라는 뜻이다.
+        -->
+        <img src="../images/k1.png">
+        <hr>
+        <img src="../images/k2.png">
+        <hr>
+        <img src="../images/k3.png" width="150px" height="100px">
+        <hr>
+        <img src="../images/k4.png" width="50%" height="50%">
+        <hr>
+        <img src="../images/k5.png" width="150px"> <!-- 크기에 대한 기준은 가로기에 세로 값을 적지 않아도 자동으로 맞춰진다.-->
+        <hr>
+
+        <!-- 테두리선 -->
+        <img src="../images/k6.png" border="2px">
+        <hr>
+        <img src="../images/k5.png" border="0">
+        <hr>
+
+    </body>
+</html>
